@@ -34,3 +34,12 @@ let mapleader = ","
 nmap <silent> <leader>t :tabe %:p:h<CR>
 
 set backspace=2
+
+"nmap <silent> <leader>" T"yt":tabe src/**/ 
+"0<CR>
+
+nmap <silent> <leader>" T"yt":tabe src/**/0
+nmap <silent> <leader>' T'yt':tabe src/**/0
+
+nmap <silent> <leader>y' T'yt'
+nmap <silent> <leader>y" T"yt"
