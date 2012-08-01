@@ -25,6 +25,7 @@ highlight Search     ctermfg=Black  ctermbg=gray cterm=NONE
 " Change current directory to that of current file
 nnoremap ,lcd :lcd %:p:h<CR>:pwd<CR>
 command Tabe tabe %:p:h
+command Spacestotabs s/    /	/g
 
 " case insensitive search
 set ic
@@ -43,3 +44,8 @@ nmap <silent> <leader>' T'yt':tabe src/**/0
 
 nmap <silent> <leader>y' T'yt'
 nmap <silent> <leader>y" T"yt"
+
+" ,s for quick save
+noremap <Leader>s :update<CR>
+noremap <Leader>d :!git diff %<CR>
+noremap <Leader>add :!git add %<CR>
