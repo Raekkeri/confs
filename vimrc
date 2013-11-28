@@ -49,3 +49,6 @@ nmap <silent> <leader>y" T"yt"
 noremap <Leader>s :update<CR>
 noremap <Leader>d :!git diff %<CR>
 noremap <Leader>add :!git add %<CR>
+
+set modeline
+set ls=2
