@@ -52,3 +52,5 @@ noremap <Leader>add :!git add %<CR>
 
 set modeline
 set ls=2
+
+au BufWinEnter *.py let w:m2=matchadd('ErrorMsg', '\%>79v.\+', -1)
